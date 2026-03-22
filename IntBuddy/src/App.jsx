@@ -7,6 +7,9 @@ import Registration from "./Components/Registration";
 import './App.css';
 import About from "./Components/About";
 import Footer from "./Components/Footer";
+import Benefits from "./Components/Benefit";
+import ExperianceForm from "./Components/ExperianceFrom";
+import Profile from "./Components/Profile";
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
         <Route path="/" element={
           <>
             <Home />
+            <Benefits/>
             <Card />
           
           </>
@@ -25,6 +29,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/Registration" element={<Registration />} />
          <Route path="/About" element={<About />} />
+         <Route path="/ExperianceForm" element={<ExperianceForm />} />
+         <Route path="/Profile" element={< Profile/>} />
       </Routes>
         <Footer />
 

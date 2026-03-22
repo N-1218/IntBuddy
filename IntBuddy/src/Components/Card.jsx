@@ -9,7 +9,10 @@ function Card() {
     }, []);
 
     return (
-        <div className="container-fluid py-5 bg-light text-center">
+        <div
+            className="container-fluid py-5 bg-light text-center mt-5"
+            style={{ paddingTop: "60px" }}  // extra top spacing
+        >
 
             {/* Heading */}
             <h2
@@ -17,7 +20,7 @@ function Card() {
                 style={{
                     opacity: show ? 1 : 0,
                     transform: show ? "translateY(0)" : "translateY(-20px)",
-                    transition: "0.6s"
+                    transition: "all 0.6s ease"
                 }}
             >
                 How To Participate ?
@@ -31,7 +34,7 @@ function Card() {
                     style={{
                         opacity: show ? 1 : 0,
                         transform: show ? "translateY(0)" : "translateY(40px)",
-                        transition: "0.8s"
+                        transition: "all 0.8s ease 0.2s"
                     }}
                 >
                     <img
@@ -42,7 +45,7 @@ function Card() {
                     />
                     <h5 className="fw-bold text-decoration-underline">STEP 1</h5>
                     <p className="text-muted">
-                        Fill your interview experience with us using the email ID through which you will avail your voucher.
+                        Fill your interview experience using the email ID through which you will receive your voucher.
                     </p>
                 </div>
 
@@ -52,7 +55,7 @@ function Card() {
                     style={{
                         opacity: show ? 1 : 0,
                         transform: show ? "translateY(0)" : "translateY(40px)",
-                        transition: "1s"
+                        transition: "all 0.8s ease 0.4s"
                     }}
                 >
                     <img
@@ -63,7 +66,7 @@ function Card() {
                     />
                     <h5 className="fw-bold text-decoration-underline">STEP 2</h5>
                     <p className="text-muted">
-                        Our management will review your application & will update you once your write-up gets approved.
+                        Our team will review your submission and update you once it gets approved.
                     </p>
                 </div>
 
@@ -73,7 +76,7 @@ function Card() {
                     style={{
                         opacity: show ? 1 : 0,
                         transform: show ? "translateY(0)" : "translateY(40px)",
-                        transition: "1.2s"
+                        transition: "all 0.8s ease 0.6s"
                     }}
                 >
                     <img
@@ -84,7 +87,7 @@ function Card() {
                     />
                     <h5 className="fw-bold text-decoration-underline">STEP 3</h5>
                     <p className="text-muted">
-                        Then your application is ready to be published.
+                        Your interview experience will be published on the platform.
                     </p>
                 </div>
 
@@ -92,12 +95,12 @@ function Card() {
 
             {/* Button */}
             <Link
-                className="btn btn-warning px-4 py-2 fw-semibold mt-3 shadow"
                 to="/share"
+                className="btn btn-warning px-4 py-2 fw-semibold mt-4 shadow"
                 style={{
                     opacity: show ? 1 : 0,
                     transform: show ? "scale(1)" : "scale(0.8)",
-                    transition: "0.8s"
+                    transition: "all 0.8s ease"
                 }}
             >
                 Share your Story
