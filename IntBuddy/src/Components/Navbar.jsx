@@ -14,10 +14,10 @@ function Navbar() {
 
           <ul className="navbar-nav">
             <li className="nav-item"><Link className="nav-link active fw-semibold" to="/">Home</Link></li>
-            <li className="nav-item"><Link className="nav-link fw-semibold" to="/About">About</Link></li>
+            <li className="nav-item"><Link className="nav-link active fw-semibold" to="/About">About</Link></li>
 
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle fw-semibold" to="#" role="button" data-bs-toggle="dropdown">Services</Link>
+              <Link className="nav-link dropdown-toggle active fw-semibold" to="#" role="button" data-bs-toggle="dropdown">Services</Link>
               <ul className="dropdown-menu shadow">
                 <li><Link className="dropdown-item" to="/web">Web Development</Link></li>
                 <li><Link className="dropdown-item" to="/app">App Development</Link></li>
