@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -14,10 +15,10 @@ function Footer() {
           <div className="col-md-3 mb-4">
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
-              <li><a href="#home" className="text-light text-decoration-none">Home</a></li>
-              <li><a href="#about" className="text-light text-decoration-none">About</a></li>
-              <li><a href="#services" className="text-light text-decoration-none">Services</a></li>
-              <li><a href="#contact" className="text-light text-decoration-none">Contact</a></li>
+              <li><Link to="/home" className="text-light text-decoration-none">Home</Link></li>
+              <li><Link to="#/about" className="text-light text-decoration-none">About</Link></li>
+              <li><Link to="/services" className="text-light text-decoration-none">Services</Link></li>
+              <li><Link to="/contact" className="text-light text-decoration-none">Contact</Link></li>
             </ul>
           </div>
 
@@ -31,10 +32,10 @@ function Footer() {
           <div className="col-md-3 mb-4">
             <h5>Follow Us</h5>
             <div className="d-flex gap-3">
-              <a href="#" className="text-light text-center"><i className="bi bi-facebook fs-3 d-block mb-1"></i>Facebook</a>
-              <a href="#" className="text-light text-center"><i className="bi bi-twitter fs-3 d-block mb-1"></i>Twitter</a>
-              <a href="#" className="text-light text-center"><i className="bi bi-instagram fs-3 d-block mb-1"></i>Instagram</a>
-              <a href="#" className="text-light text-center"><i className="bi bi-linkedin fs-3 d-block mb-1"></i>LinkedIn</a>
+              <Link to="#" className="text-light text-center"><i className="bi bi-facebook fs-3 d-block mb-1"></i>Facebook</Link>
+              <Link to="#" className="text-light text-center"><i className="bi bi-twitter fs-3 d-block mb-1"></i>Twitter</Link>
+              <Link to="#" className="text-light text-center"><i className="bi bi-instagram fs-3 d-block mb-1"></i>Instagram</Link>
+              <Link to="#" className="text-light text-center"><i className="bi bi-linkedin fs-3 d-block mb-1"></i>LinkedIn</Link>
             </div>
           </div>
 

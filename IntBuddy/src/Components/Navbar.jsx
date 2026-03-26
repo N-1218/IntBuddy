@@ -6,14 +6,14 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark shadow fixed-top" style={{ backgroundColor: "#000" }}>
       <div className="container-fluid px-0">
 
-        <Link className="navbar-brand ms-3 d-flex align-items-center" to="/"><img src={intbuddylogo} alt="IntBuddy Logo" style={{ height: "45px", width: "60px", objectFit: "contain" }} /></Link>
+        <Link className="navbar-brand ms-3 d-flex align-items-center" to="/"><img src={intbuddylogo} alt="IntBuddy Logo" style={{ height: "90px", width: "auto", objectFit: "contain",marginTop: "-20px",marginBottom: "-20px" }}  /></Link>
 
         <button className="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span className="navbar-toggler-icon"></span></button>
 
         <div className="collapse navbar-collapse" id="navbarNav">
 
           <ul className="navbar-nav">
-            <li className="nav-item"><Link className="nav-link active fw-semibold" to="/">Home</Link></li>
+            <li className="nav-item"><Link className="nav-link active fw-semibold" to="/" >Home</Link></li>
             <li className="nav-item"><Link className="nav-link active fw-semibold" to="/About">About</Link></li>
 
             <li className="nav-item dropdown">
