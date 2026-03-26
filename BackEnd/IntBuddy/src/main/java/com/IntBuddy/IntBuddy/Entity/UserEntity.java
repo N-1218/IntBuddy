@@ -1,5 +1,8 @@
 package com.IntBuddy.IntBuddy.Entity;
 
-public class UserEntity {
+import jakarta.persistence.Entity;
 
+@Entity
+public class UserEntity {
+  
 }
